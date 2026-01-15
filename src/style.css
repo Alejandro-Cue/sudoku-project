@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(50deg, grey, lightgrey, white);
+  background-size: 400% 400%;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  font-size: 100px;
+}
+
+header p {
+  font-family: 'Rationale', sans-serif;
+  text-align: center;
+  color: #555;
+  font-size: 35px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#app #timer {
+  font-family: orbitron, sans-serif;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  width: 400px;
+}
+
+.dificultad {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
+.dificultad button {
+  padding: 10px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.dificultad button:hover {
+  background-color: #45a049;
+}
+
+.resolver {
+  display: flex;
+  justify-content: center;
+  margin: 80px 40px;
+}
+.resolver button {
+  padding: 10px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white;
+  transition: background-color 0.3s ease;
+}     
+.resolver button:hover {
+  background-color: #007bb5;
+}
+
+/* Tablero Sudoku */
+#tablero-sudoku {
+  border-collapse: separate; /* separado para controlar bordes */
+  border-spacing: 0;         /* sin espacio entre celdas */
+  margin: 0 auto;
+  border: 3px solid #333;    /* borde externo del tablero */
+}
+
+#tablero-sudoku td {
+  border: 1px solid #999;   /* borde interno base */
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+#tablero-sudoku input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Rationale', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Bordes más gruesos para subcuadrantes */
+
+/* Bordes horizontales gruesos */
+#tablero-sudoku tr:nth-child(3n) td {
+  border-bottom: 3px solid #333;
+}
+
+/* Bordes verticales gruesos */
+#tablero-sudoku td:nth-child(3n) {
+  border-right: 5px solid #333;
+}
+
+/* Opcional: distinguir subcuadrantes visualmente */
+#tablero-sudoku td:nth-child(1),
+#tablero-sudoku td:nth-child(4),
+#tablero-sudoku td:nth-child(7) {
+  border-left: 3px solid #333;
+}
+
+#tablero-sudoku tr:nth-child(1),
+#tablero-sudoku tr:nth-child(4),
+#tablero-sudoku tr:nth-child(7) td {
+  border-top: 3px solid #333;
+}
+
+
+.corporativo {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  max-height: 390px;
+
+}
+
+#img-1 {
+  width: 20%;
+  height: 20%;
+  
+}
+
+#img-2 {
+  width: 50%;
+  height: auto;
+  margin-top: 120px;
+}
+
+.lorem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.lorem h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+
+}
+
+.lorem p {
+  color: white;
+  font-family: 'Courier New', 'Courier New', Courier, monospace;
+  max-width: 400px;
+  text-align: center;
+  align-self: center;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku | Proyecto JavaScript</title>
+    <link rel="stylesheet" href="./src/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Rationale&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Sudoku</h1>
+      <p>Prueba tus habilidades y tu agilidad mental para resolver este rompecabezas lógico.</p>
+    </header>
+    <main>
+      
+      <div id="app">
+        <p id="timer">Tiempo: 0:00</p>
+        <div class="dificultad">
+          <button id="facil-btn">Fácil</button>
+          <button id="moderado-btn">Moderado</button>
+          <button id="dificil-btn">Difícil</button>
+        </div>
+        <div class="tablero-container">
+          <table id="tablero-sudoku">
+            
+          </table>
+        </div>
+        <div class="resolver">
+          <button id="resolver-btn">Resolver Sudoku</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="corporativo">
+        <img id="img-1" src="./public/logo CueDev.svg" alt="logotipo corporativo 2">
+        <img id="img-2" src="./public/Logotipo corporativo 1.svg" alt="logotipo corporativo 2">
+        <div class="lorem">
+          <h3>J.A. Cué</h3>
+          <p>Apasionado por la programación y el desarrollo web, actualmente estudio IA y FullStack mientras creo pequeños proyectos personales para practicar y mejorar mis habilidades. Me encanta aprender nuevos lenguajes, experimentar con frameworks y enfrentar desafíos. Mi objetivo es crecer como desarrollador, construir aplicaciones útiles y seguir aprendiendo día a día sobre nuevas tecnologías.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
